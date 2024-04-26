@@ -11,10 +11,6 @@ function TableFrom({
   setAmount,
   tax,
   setTax,
-  cgst,
-  setCGST,
-  sgst,
-  setSGST,
 }) {
   const calulateAmount = (amount) => {
     const amt = quantity * price;
@@ -77,7 +73,7 @@ function TableFrom({
       </div>
 
       <div className="flex flex-col">
-        <label htmlFor="amount">Amount</label>
+        
         <p className="h-11 m-4 text-gray-900 p-3 rounded">
           {calulateAmount(amount)}
         </p>

@@ -1,13 +1,6 @@
 import React from "react";
 
-function Footer({
-  name,
-  website,
-  email,
-  phone,
-  bankAccount,
-  bankName,
-}) {
+function Footer({ name, website, email, phone, bankAccount, bankName }) {
   return (
     <>
       <footer className="footer border-t-2 border-gray-300 pt-5">

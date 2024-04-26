@@ -29,8 +29,6 @@ function App() {
   const [price, setPrice] = useState("");
   const [amount, setAmount] = useState("");
   const [tax, setTax] = useState("");
-  const [cgst, setCGST] = useState("");
-  const [sgst, setSGST] = useState("");
 
   const handlePrint = () => {
     window.print();
@@ -61,8 +59,6 @@ function App() {
               price={price}
               amount={amount}
               tax={tax}
-              cgst={cgst}
-              sgst={sgst}
             />
 
             <Notes notes={notes} />
@@ -247,10 +243,6 @@ function App() {
                   setAmount={setAmount}
                   tax={tax}
                   setTax={setTax}
-                  cgst={cgst}
-                  setCGST={setCGST}
-                  sgst={sgst}
-                  setSGST={setSGST}
                 />
               </article>
 
