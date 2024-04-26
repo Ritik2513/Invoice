@@ -16,15 +16,11 @@ function TableFrom({
   sgst,
   setSGST,
 }) {
-
-  const calulateAmount = (amount) =>{
-    setAmount(quantity*price)
-  }
-
-  const calulateCGSTSGST = (amount)=>{
-    setTax(((quantity*price)*14)/100)
-  }
-
+  const calulateAmount = (amount) => {
+    const amt = quantity * price;
+    const tx = (amt * tax) / 100;
+    setAmount(amt + tx);
+  };
 
   return (
     <>
@@ -79,12 +75,12 @@ function TableFrom({
           className="h-11 m-4 text-gray-900 p-3 rounded"
         />
       </div>
-    
 
       <div className="flex flex-col">
         <label htmlFor="amount">Amount</label>
-       <p className="h-11 m-4 text-gray-900 p-3 rounded">{calulateAmount(amount)}</p>
-       
+        <p className="h-11 m-4 text-gray-900 p-3 rounded">
+          {calulateAmount(amount)}
+        </p>
       </div>
     </>
   );

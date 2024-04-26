@@ -62,7 +62,7 @@ function App() {
               amount={amount}
               tax={tax}
               cgst={cgst}
-              sgst = {sgst}
+              sgst={sgst}
             />
 
             <Notes notes={notes} />
@@ -134,7 +134,7 @@ function App() {
               {/* phone number */}
               <label htmlFor="phone">Enter your Phone Number</label>
               <input
-                type="number"
+                type="text"
                 name="phone"
                 id="phone"
                 placeholder="Enter your phone number"
@@ -249,8 +249,8 @@ function App() {
                   setTax={setTax}
                   cgst={cgst}
                   setCGST={setCGST}
-                  sgst = {sgst}
-                  setSGST = {setSGST}
+                  sgst={sgst}
+                  setSGST={setSGST}
                 />
               </article>
 

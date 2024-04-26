@@ -1,6 +1,6 @@
 import React from "react";
 
-function Table({description,quantity, price, amount,tax}) {
+function Table({ description, quantity, price, amount, tax }) {
   return (
     <>
       <table width="100%">
@@ -10,6 +10,7 @@ function Table({description,quantity, price, amount,tax}) {
             <td className="font-bold">Quantity</td>
             <td className="font-bold">Unit Price</td>
             <td className="font-bold">Tax</td>
+
             <td className="font-bold">Amount</td>
           </tr>
         </thead>
