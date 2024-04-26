@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer li{
+    margin: 0.5rem 0.2rem;
+}
+
+button{
+    user-select: none;
+}
