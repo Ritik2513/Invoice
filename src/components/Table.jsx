@@ -5,7 +5,7 @@ function Table({ description, quantity, price, amount, tax }) {
     <>
       <table width="100%">
         <thead>
-          <tr className="bg-gray-100 p-1">
+          <tr className="bg-gray-200 p-1">
             <td className="font-bold">Items Description</td>
             <td className="font-bold">Quantity</td>
             <td className="font-bold">Unit Price</td>
