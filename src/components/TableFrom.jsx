@@ -11,10 +11,11 @@ function TableFrom({
   setAmount,
   tax,
   setTax,
+
 }) {
   const calulateAmount = (amount) => {
     const amt = quantity * price;
-    const tx = ((amt * tax) / 100)/2;
+    const tx = (amt * tax) / 100 / 2;
     setAmount(amt + tx);
   };
 
@@ -60,24 +61,20 @@ function TableFrom({
           </div>
 
           <div className="flex flex-col">
-          <label htmlFor="price">Tax</label>
-          <input
-            type="text"
-            name="tax"
-            id="tax"
-            placeholder="CGST 14% + SGST 14%"
-            value={tax}
-            onChange={(e) => setTax(e.target.value)}
-          />
+            <label htmlFor="price">Tax</label>
+            <input
+              type="text"
+              name="tax"
+              id="tax"
+              placeholder="CGST 14% + SGST 14%"
+              value={tax}
+              onChange={(e) => setTax(e.target.value)}
+            />
           </div>
         </article>
       </div>
 
-      <div className="flex flex-col">
-        <p className="h-11 m-4 text-gray-900 p-3 rounded">
-          {calulateAmount(amount)}
-        </p>
-      </div>
+      <div className="flex flex-col">{calulateAmount(amount)}</div>
     </>
   );
 }
