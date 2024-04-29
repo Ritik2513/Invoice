@@ -79,12 +79,12 @@ function App() {
               <article className="md:grid grid-cols-2 gap-10">
                 <div className="flex flex-col">
                   {/* Name */}
-                  <label htmlFor="name">Enter your name </label>
+                  <label htmlFor="name">Enter Company Name</label>
                   <input
                     type="text"
                     name="text"
                     id="name"
-                    placeholder="ex: Raju Shrivastava"
+                    placeholder="ex: Vijaya Traders Pvt. Ltd"
                     autoComplete="off"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
